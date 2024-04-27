@@ -3,10 +3,12 @@ Type=Service
 Icon=view-restore
 X-KDE-ServiceTypes=KonqPopupMenu/Plugin
 MimeType=image/png;
-Actions=optipng;
+Actions=optipng
+Terminal=true
 Encoding=UTF-8
 
 [Desktop Action optipng]
-Name=Skompresuj plik PNG
+Name=Compress PNG file
+Name[pl]=Skompresuj plik PNG
 Icon=view-restore
 Exec=optipng -p %F
