@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Service
+Icon=view-restore
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+MimeType=image/jpeg;
+Actions=jpegoptim;
+Encoding=UTF-8
+
+[Desktop Action jpegoptim]
+Name=Skompresuj plik JPEG w wybranym stopniu
+Icon=view-restore
+Exec=jpegoptim -m $(kdialog --inputbox 'Proszę podać stopień kompresji' 75) %F
